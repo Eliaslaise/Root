@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img
+ {
+opacity: .2;
+border: 2px;
+}
+img:hover{
+    opacity: 1;
+border: solid 2px brown;
+transform: scale(1.2 , 1.2);
+transition: 1s;
+}
+
+body{
+    text-align: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header, h1
+{color: brown;font-family: 'Bungee', cursive;
+text-align: center;}
+
+
+.navegacionInicio
+{
+    padding: 1rem;
+    list-style: none;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.navegacionInicio li a{
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+
+.inicioRegistro
+{
+    padding: 1rem;
+   border: color  solid;
+    list-style: none;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.inicioRegistro li a{
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+
+
+.inicio li
+{
+display: inline-block;
+text-align: center;
+}
+.inicio li a
+{
+text-decoration: none;
+display: inline-block;    
+}
+
+.PieDePagina
+{
+    text-align: center;
+    clear: both;
+}
+
+article
+{text-align: center;}
+
+header h4
+{font-family: 'Bungee', cursive; }
+
+header ul
+{color: burlywood;}
+
+.Fotografia
+{ font-family: 'Rajdhani', sans-serif;}
+
+.Videoclips 
+{ font-family: 'Rajdhani', sans-serif;}
+
+html
+{background-color: black;color: white;}
+
+footer, .final, h4
+{font-style: italic;}
+
+
+body
+{background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, 
+    #000000 74%);
+}
+
+.cliente1, .cliente2, .cliente3, .cliente4, .cliente5
+{
+    width: 300px;
+    margin: 1rem;
+    padding: 10px;
+    overflow: auto;
+    border: rgb(54, 8, 0) 3px solid;
+
+    
+}
+
+.clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.contacto, .mapa
+{
+flex-direction: row;
+}
+.comentariosClientes
+{text-align: center;}
+
+.conteiner{
+width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "PieDePagina PieDePagina PieDePagina PieDePagina"
+        "navegacion navegacion navegacion navegacion "
+         "fotografiaYvideo"
+         "comentariosClientes"
+         "final";
+    gap: 10px;
+}
+footer
+{clear: both;}
+
+
+@media only screen and (max-width: 700px){
+    body{
+        background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, 
+    #000000 74%);
+    }
+.foto1, .foto2, .foto3{ 
+    width: 500px;
+    justify-content: center ;
+
+}
+.clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-areas:
+    "cliente1 cliente2"
+    "cliente3 cliente4"
+    "cliente5";
+}
+
+.videoclip{
+    width: 400px;
+    height: 250px;
+}
+.cliente1, .cliente2, .cliente3, .cliente4, .cliente5
+{
+    width: 600px;
+    height: 300px;
+    margin: 1rem;
+    padding: 10px;
+    overflow:scroll ;
+    border: rgb(54, 8, 0) 3px solid;
+    justify-content: center;
+
+    
+}
+
+}
+
+@media only screen and (max-width: 640px){
+    body{
+        background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, 
+    #000000 74%);
+    }
+
+.Gfotos{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+}
+
+}
+    .foto1, .foto2, .foto3{ 
+    width: 500px;
+    justify-content: center ;
+
+}
+.cliente1, .cliente2, .cliente3, .cliente4, .cliente5
+{
+    width: 300px;
+    margin: 1rem;
+    padding: 10px;
+    overflow:scroll ;
+    border: rgb(54, 8, 0) 3px solid;
+    justify-content: center;
+}
+    .clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+
+.conteiner{
+    width: 90%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "PieDePagina"
+            "navegacionInicio"
+            "inicioRegistro"
+             "fotografiaYvideo"
+             "comentariosClientes"
+             "final";
+        gap: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+    body{
+        background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, 
+    #000000 74%);
+    }
+
+.foto1, .foto2, .foto3{
+    width: 300px;
+    justify-content: center ;
+}
+.clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.cliente1, .cliente2, .cliente3, .cliente4, .cliente5
+{
+    width: 600px;
+    height: 300px;
+    margin: 1rem;
+    padding: 10px;
+    overflow:scroll ;
+    border: rgb(54, 8, 0) 3px solid;
+    justify-content: center;
+}
+ .videoclip{
+    width: 800px;
+    height: 500px;
+}
+}
